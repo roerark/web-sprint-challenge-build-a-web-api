@@ -26,9 +26,9 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Task 2: CodeGrade Setup
 
-- [ ] Follow [instructions](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374) to set up Codegrade's Webhook and Deploy Key, making sure your deployment is set to your `<firstName-lastName>` branch.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x ] Follow [instructions](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374) to set up Codegrade's Webhook and Deploy Key, making sure your deployment is set to your `<firstName-lastName>` branch.
+- [x ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
+- [x ] Check to see that Codegrade has accepted your git submission.
 
 ### Task 3: Project Requirements (MVP)
 
@@ -92,22 +92,22 @@ The description of the structure and extra information about each _resource_ sto
 
 #### Projects
 
-| Field       | Data Type | Metadata                                                                    |
-| ----------- | --------- | --------------------------------------------------------------------------- |
-| id          | number    | do not provide it when creating projects, the database will generate it     |
-| name        | string    | required                                                                    |
-| description | string    | required                                                                    |
-| completed   | boolean   | not required, defaults to false when creating projects                      |
+| Field       | Data Type | Metadata                                                                |
+| ----------- | --------- | ----------------------------------------------------------------------- |
+| id          | number    | do not provide it when creating projects, the database will generate it |
+| name        | string    | required                                                                |
+| description | string    | required                                                                |
+| completed   | boolean   | not required, defaults to false when creating projects                  |
 
 #### Actions
 
-| Field       | Data Type | Metadata                                                                                         |
-| ----------- | --------- | ------------------------------------------------------------------------------------------------ |
-| id          | number    | do not provide it when creating actions, the database will generate it                           |
-| project_id  | number    | required, must be the id of an existing project                                                  |
-| description | string    | required, up to 128 characters long                                                              |
-| notes       | string    | required, no size limit. Used to record additional notes or requirements to complete the action  |
-| completed   | boolean   | not required, defaults to false when creating actions                                            |
+| Field       | Data Type | Metadata                                                                                        |
+| ----------- | --------- | ----------------------------------------------------------------------------------------------- |
+| id          | number    | do not provide it when creating actions, the database will generate it                          |
+| project_id  | number    | required, must be the id of an existing project                                                 |
+| description | string    | required, up to 128 characters long                                                             |
+| notes       | string    | required, no size limit. Used to record additional notes or requirements to complete the action |
+| completed   | boolean   | not required, defaults to false when creating actions                                           |
 
 ### Database Persistence Helpers
 

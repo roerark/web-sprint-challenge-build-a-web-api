@@ -14,7 +14,7 @@ server.use("/api/actions", actionRouter);
 server.use("/api/projects", projectsRouter);
 
 server.get("/", (_, res) => {
-  res.send(`<h1>Craig's Sprint Challenge`);
+  res.send(`<h1>Joe's Sprint Challenge`);
 });
 
 module.exports = server;
